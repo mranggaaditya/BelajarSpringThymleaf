@@ -1,9 +1,12 @@
 package com.juaracoding.ujian4.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-//import com.juaracoding.ujian4.entity.Soal;
+import com.juaracoding.ujian4.entity.Soal;
 
-//public interface SoalRepository extends JpaRepository<Soal, Integer> {
-//
-//}
+
+public interface SoalRepository extends CrudRepository<Soal, Long>{
+	
+	public Soal findByNamaSoal(String nama);
+
+}

@@ -15,14 +15,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 @Entity
-@Table(name="dosen")
-public class Dosen {
+@Table(name="pertanyaan")
+public class Pertanyaan {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long idDosen;
-	private String username;
-	private String password;
-	private String namaDosen;
-	
+	private long id;
+	private String pertanyaan;
+	private String jawaban1;
+	private String jawaban2;
+	private String jawaban3;
+	private String jawaban4;
+	private String jawabanBenar;
+	private String statusGambar;
 
 }
